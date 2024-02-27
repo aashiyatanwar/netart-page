@@ -1,0 +1,189 @@
+body {
+ 
+  background-image: linear-gradient(to bottom, #f8f8ed, #f7eaae);
+  height: auto;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding-top: 20px;
+}
+
+.logo {
+  height: auto;
+  width: 30%;
+}
+
+.content {
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.content ul,
+.content li {
+  font-size: 14px;
+}
+
+.content p {
+  font-size: 14px;
+}
+
+.image1 {
+  height: auto;
+  width: 35%;
+  margin-right: auto;
+}
+
+.image2 {
+  height: auto;
+  width: 100%;
+}
+
+.image3 {
+  height: auto;
+  width: 60%;
+}
+
+.text-container {
+  flex: 1;
+  padding-left: 20px;
+  margin-left: auto;
+  display: flex;
+  padding-right: 20px;
+}
+
+.bottom-container {
+  font-size: 13px;
+  align-items: center;
+  text-align: center; 
+}
+
+.bottom-container p {
+  font-family: "Times New Roman", Times, serif;
+}
+.hr-line {
+  border: none;
+  border-top: 2px solid rgb(218, 8, 8); 
+  width: 90%; 
+  padding-left: 40px;
+  padding-right: 40px; 
+}
+.pipe {
+  color: red; 
+  margin: 0 5px;
+}
+.footer {
+  background-color: rgb(218, 72, 72);
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 2rem;
+  align-items: center; 
+}
+
+.icon-content {
+  display: flex;
+  align-items: center;
+}
+
+.phone-icon,
+.facebook-icon,
+.globe-icon {
+  background-color: white; 
+  border-radius: 50%; 
+  width: 30px; 
+  height: 30px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size : 10px
+}
+
+.icon {
+  color: rgb(202, 60, 60); 
+  
+}
+
+.footer a {
+  color: white; 
+  text-decoration: none; 
+}
+
+.footer a:hover {
+  text-decoration: underline; 
+}
+/* @media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo,
+  .image1 {
+    width: 80%;
+  }
+
+  .image1 {
+    margin-right: 0;
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  .text-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+} */
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px; /* Decrease font size for better readability on smaller screens */
+  }
+
+  .container {
+    padding: 10px; /* Add padding to the container */
+  }
+
+  .logo {
+    width: 80%; /* Adjust logo width for smaller screens */
+  }
+
+  .image1 {
+    width: 80%; /* Adjust image width for smaller screens */
+    margin-right: 0; /* Remove margin-right for smaller screens */
+    margin-top: 20px; /* Add margin-top for better spacing */
+  }
+
+  .text-container {
+    padding: 0; /* Remove padding for smaller screens */
+    text-align: center; /* Center text in the text container */
+    margin-top: 20px; /* Add margin-top for better spacing */
+  }
+
+  .bottom-container {
+    padding: 10px; /* Add padding to the bottom container */
+  }
+
+  .phone-icon,
+  .facebook-icon,
+  .globe-icon {
+    width: 20px; /* Adjust icon size for smaller screens */
+    height: 20px; /* Adjust icon size for smaller screens */
+    font-size: 8px; /* Decrease icon font size for smaller screens */
+  }
+}
